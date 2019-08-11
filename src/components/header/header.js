@@ -12,13 +12,13 @@ const Header = ({ siteTitle }) => (
       </Link>
       <ul>
         <li>
-          <Link to="./post">Posts</Link>
+          <Link to="./posts/">Posts</Link>
         </li>
       </ul>
     </h1>
   </header>
-)        
-
+)
+ 
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
