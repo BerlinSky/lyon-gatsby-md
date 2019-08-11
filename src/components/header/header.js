@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
     <h1 style={{ margin: 0 }}>
       <Link to="/" className={headerStyle.header}>
         {siteTitle} 
-      </Link>
+      </Link>       
       <ul>
         <li>
           <Link to="/posts/">Posts</Link>
