@@ -3,16 +3,16 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import headerStyle from "./header.module.scss"
-
+                     
 const Header = ({ siteTitle }) => (
   <header className={headerStyle.header}>
     <h1 style={{ margin: 0 }}>
       <Link to="/" className={headerStyle.header}>
-        {siteTitle}
+        {siteTitle} 
       </Link>
       <ul>
         <li>
-          <Link to="./posts/">Posts</Link>
+          <Link to="/posts/">Posts</Link>
         </li>
       </ul>
     </h1>
@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
-
+ 
 Header.defaultProps = {
   siteTitle: ``,
 }
