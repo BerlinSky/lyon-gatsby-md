@@ -9,15 +9,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
                              
-import Header from "./header"
+import Header from "./header/header"
 import Footer from "./footer/footer"
+                             
+import "./layout.scss"       
                        
-import "./layout.scss" 
-                      
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
-      site {   
+      site {          
         siteMetadata {
           title
         }    
