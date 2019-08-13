@@ -4,8 +4,8 @@ import legaStyles from "./legal.module.scss"
 
 const FooterLegal = () => (
   <section className={legaStyles.legal}>
-    <ul>
-      <li>
+    <ul className={legaStyles.list}>
+      <li>                        
         <Link to="#">Terms &amp; Conditions</Link>
       </li>  
       <li>   
@@ -14,6 +14,6 @@ const FooterLegal = () => (
       <li>&copy; 2019 Copyright Nowrap Inc.</li>
     </ul>    
   </section> 
-)           
-
+)            
+             
 export default FooterLegal

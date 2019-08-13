@@ -2,16 +2,21 @@
   padding: 0.9375rem 1.875rem;
   background-color: #333;
 
-  ul {
+  .list {
+    margin: 0px 0.725rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+
     li {
       margin: 0.125rem 0.625rem;
       white-space: nowrap;
-    }
-    li:nth-last-child(2) {
-      flex: 1;
+
+      a:hover {
+        color: #cccccc;
+        text-decoration: none;
+      }
     }
   }
 }

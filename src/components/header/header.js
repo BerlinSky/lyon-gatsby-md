@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       <Link to="/" className={headerStyle.header}>
         {siteTitle} 
       </Link>       
-      <ul>
+      <ul>          
         <li>
           <Link to="/posts/">Posts</Link>
         </li>
