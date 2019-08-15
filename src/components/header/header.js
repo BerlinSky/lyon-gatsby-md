@@ -7,18 +7,18 @@ import headerStyle from "./header.module.scss"
 const Header = ({ siteTitle }) => (
   <header className={ headerStyle.header }>
     <nav id={siteTitle}>                 
-      <h2 >LOGO</h2>         
+      <h2 >LOGO</h2>            
       <ul>                               
         <li>                             
           <Link to="/">Home</Link>      
         </li>                  
         <li>                                  
-          <Link to="/">Services</Link>
+          <Link to="/page-2/">Services</Link>
         </li>                   
         <li>                   
           <Link to="/">Team</Link>
         </li>                  
-        <li>                
+        <li>                   
           <Link to="/">Careers</Link>
         </li>               
       </ul>                 

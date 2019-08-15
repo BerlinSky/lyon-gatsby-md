@@ -1,5 +1,5 @@
 .layout {
-  background-color: tomato;
+  // background-color: tomato;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,9 +7,10 @@
   min-height: 100vh;
 
   .container {
+    // padding: 0px 80px;
+
     flex: 1 1 auto;
     background-color: lightgreen;
-    // width: 960px;
     width: 100%;
 
     display: flex;
