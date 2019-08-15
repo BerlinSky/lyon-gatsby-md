@@ -4,10 +4,11 @@ import styles from "./careers.module.scss"
 const CareersPage = () => (
   <section className={styles.careers}>
     <div className={styles.inner}>
-      <div>Achieve Balance</div>
-      <p>Premium CBD products to help you feel better, naturally and easily.</p>
-    </div>         
-  </section>
-)
-
-export default CareersPage
+      <div className={ styles.title }>The Ideal Career Opportunity</div>
+      <p className={ styles.text }>You will be productive and happy for a long time..</p>
+    </div>                                                                                           
+  </section>                                                                                        
+)                                                                                                  
+                                                                                                 
+export default CareersPage                                                                      
+                                                                                               
