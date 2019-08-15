@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
                      
 import headerStyle from "./header.module.scss"
-                                       
+                                              
 const Header = ({ siteTitle }) => (
   <header className={ headerStyle.header }>
     <nav id={siteTitle}>                 
@@ -16,16 +16,16 @@ const Header = ({ siteTitle }) => (
           <Link to="/page-2/">Services</Link>
         </li>                   
         <li>                   
-          <Link to="/">Team</Link>
+          <Link to="/posts/">Team</Link>
         </li>                  
         <li>                   
           <Link to="/">Careers</Link>
         </li>               
       </ul>                 
       <button className={ headerStyle.contact }>Get in touch</button>
-    </nav>               
+    </nav>                 
   </header>              
-)                    
+)                        
                      
 Header.propTypes = { 
   siteTitle: PropTypes.string,
