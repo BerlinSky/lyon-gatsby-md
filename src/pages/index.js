@@ -8,6 +8,6 @@ const IndexPage = () => (
     <LandingPage></LandingPage>        
   </Layout>                                    
 )                                      
-                           
-export default IndexPage   
+                                       
+export default IndexPage               
                     

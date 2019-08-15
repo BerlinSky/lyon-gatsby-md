@@ -19,20 +19,20 @@ const Header = ({ siteTitle }) => (
           <Link to="/posts/">Team</Link>
         </li>                  
         <li>                   
-          <Link to="/">Careers</Link>
+          <Link to="/careers">Careers</Link>
         </li>               
       </ul>                 
       <button className={ headerStyle.contact }>Get in touch</button>
-    </nav>                 
-  </header>              
+    </nav>                  
+  </header>                
 )                        
-                     
+                         
 Header.propTypes = { 
   siteTitle: PropTypes.string,
 }                   
-                
+                  
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: ``,  
 }
 
 export default Header

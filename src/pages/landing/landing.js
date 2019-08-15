@@ -3,7 +3,7 @@ import styles from "./landing.module.scss"
                                           
 const LandingPage = () => ( 
   <div className={styles.landing }>                    
-    <h1>We are here to help you</h1>    
+    <h1>We are here to help you</h1>                
     <p>                                 
       One morning, when Gregor Samsa woke from troubled dreams, he found
       himself transformed in his bed into a horrible vermin.

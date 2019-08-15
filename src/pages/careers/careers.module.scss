@@ -1,0 +1,17 @@
+.careers {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 90px 0;
+  background: #fbeed4;
+  color: #1f3443;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(12, minmax(auto, 80px));
+  grid-gap: 0 20px;
+  text-align: center;
+   
+  .inner {
+    grid-column-end: span 10;
+    grid-column-start: 2;
+  }
+}
