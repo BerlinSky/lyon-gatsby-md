@@ -12,25 +12,25 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {                                  
         siteMetadata {                        
-          title                               
-        }                                     
+          title                                 
+        }                                      
       }                                       
-    }               
-  `)             
-                
-  return (     
+    }                                        
+  `)                                        
+                                           
+  return (                                 
     <section className={layoutStyles.layout}>
       <div className={layoutStyles.container}>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>
-          {children}
-        </main>
-        <Footer />
-      </div>    
-    </section>  
-  )           
-}             
-             
+        <main className={layoutStyles.main}>                          
+          {children}                      
+        </main>                         
+        <Footer />                 
+      </div>                       
+    </section>                   
+  )                             
+}                              
+                            
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
