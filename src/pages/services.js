@@ -4,9 +4,9 @@ import Layout from "../components/layout"
 import ServicesPage from "./services/services"
                                              
 const ServicesLandingPage = () => (         
-  <Layout>                         
-    <ServicesPage></ServicesPage>
-  </Layout>        
+  <Layout>                          
+    <ServicesPage></ServicesPage>   
+  </Layout>                         
 )                
                 
 export default ServicesLandingPage
