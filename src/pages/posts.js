@@ -1,36 +1,40 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-            
+                                                      
 import Layout from "../components/layout"
+
+import styles from "./teams.module.scss";
+
+const PostsPage = ({ data }) => (        
+  <Layout>                              
+    <div className={ styles.main }>          
+      <h1>Hi from the posts page</h1>    
+      <p>Welcome to Posts</p>       
+      <h2>{data.allMarkdownRemark.totalCount} Posts</h2>
                                    
-const PostsPage = ({ data }) => (  
-  <Layout>           
-    <h1>Hi from the posts page</h1>
-    <p>Welcome to Posts</p>
-    <h2>{data.allMarkdownRemark.totalCount} Posts</h2>
-                       
-    {data.allMarkdownRemark.edges.map(({ node }) => (
-      <div key={node.id}>
-        <Link to={node.fields.slug}>    
-          <h3>  
-            {node.frontmatter.title}{" "}
-            <span> 
-              — {node.frontmatter.date}
-            </span>
-          </h3> 
-          <p>{node.excerpt}</p>
-        </Link>   
-      </div>      
-    ))}           
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.id}>      
+          <Link to={node.fields.slug}>    
+            <h3>                 
+              {node.frontmatter.title}{" "}
+              <span>     
+                — {node.frontmatter.date}
+              </span>    
+            </h3>        
+            <p>{node.excerpt}</p>
+          </Link>        
+        </div>           
+      ))}                
+    </div>               
   </Layout>                                           
 )                                                    
-                
+                         
 export const query = graphql`
-  query {     
+  query {              
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
-      edges { 
-        node {
+      edges {   
+        node {  
           id
           frontmatter {
             title
@@ -42,8 +46,8 @@ export const query = graphql`
           excerpt
         }
       }
-    }
-  }
-`
+    }  
+  }    
+`      
 export default PostsPage
- 
+       

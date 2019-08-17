@@ -4,30 +4,30 @@ import React from "react"
                                         
 import headerStyle from "./header.module.scss"
                                               
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }) => (     
   <header className={ headerStyle.header }>
     <nav id={siteTitle}>                 
-      <h2 >LOGO</h2>            
+      <h2 >LOGO</h2>                     
       <ul>                               
         <li>                             
           <Link to="/">Home</Link>      
-        </li>                  
+        </li>                     
         <li>                                  
           <Link to="/services/">Services</Link>
-        </li>                   
+        </li>                     
         <li>                   
-          <Link to="/posts/">Team</Link>
+          <Link to="/teams/">Teams</Link>
         </li>                  
         <li>                   
           <Link to="/careers">Careers</Link>
-        </li>                
-      </ul>                 
+        </li>                  
+      </ul>                    
       <button className={ headerStyle.contact }>Get in touch</button>
     </nav>                  
   </header>                
 )                          
                          
-Header.propTypes = { 
+Header.propTypes = {    
   siteTitle: PropTypes.string,
 }                   
                   
