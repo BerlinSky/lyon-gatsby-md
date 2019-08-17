@@ -1,8 +1,8 @@
 ---
 date: "2018-07-21"
-title: "My First Post"
+title: "Movie Reviews"
 tags: ["this", "that"]
-excerpt: "A preview of my first post"
+excerpt: "A summary of some movie reviews"
 ---
 
-Lorem ipsum.
+## Current events
