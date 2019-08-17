@@ -8,7 +8,7 @@ import TeamPage from "./teams/teams"
 const TeamsLandingPage = ({data}) => (           
   <Layout>                           
     <TeamPage data={data}></TeamPage>  
-  </Layout>                       
+  </Layout>                          
 )                               
                                 
 export const query = graphql`   
@@ -18,8 +18,8 @@ export const query = graphql`
       edges {                
         node {              
           id                
-          frontmatter {
-            title
+          frontmatter {     
+            title           
             date(formatString: "DD MMMM, YYYY")
           }                    
           fields {             
