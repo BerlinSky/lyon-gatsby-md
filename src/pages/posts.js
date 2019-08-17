@@ -3,17 +3,15 @@ import { Link, graphql } from "gatsby"
                                                       
 import Layout from "../components/layout"
 
-import styles from "./teams.module.scss";
-
 const PostsPage = ({ data }) => (        
   <Layout>                              
-    <div className={ styles.main }>          
+    <div>          
       <h1>Hi from the posts page</h1>    
-      <p>Welcome to Posts</p>       
+      <p>Welcome to Posts</p>          
       <h2>{data.allMarkdownRemark.totalCount} Posts</h2>
                                    
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>      
+        <div key={node.id}>       
           <Link to={node.fields.slug}>    
             <h3>                 
               {node.frontmatter.title}{" "}

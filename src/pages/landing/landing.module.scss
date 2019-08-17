@@ -11,4 +11,8 @@
     no-repeat center / cover;
   background-blend-mode: luminosity;
   color: #ffffff;
-}               
+
+  h1 {
+    color: inherit;
+  }
+}
