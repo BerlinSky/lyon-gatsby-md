@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"                        
-                                  
-// import styles from "./teams.module.scss";
+                                      
+import styles from "./teams-list-item.module.scss";
                                             
 const TeamsListItemPage = (props) => (   
-  <li key={props.key}>                                            
+  <li className={styles.listItem}>                                            
     <Link to={props.slug}>                               
        <h3>                                                    
         {props.title}{" "}                        
@@ -14,22 +14,9 @@ const TeamsListItemPage = (props) => (
        </h3>                                
       <p>{props.excerpt}</p>                
      </Link>                                
-   </li>                             
-)                                    
-// {props.edges.map(({ node }) => (                    
-//   <li key={node.id}>                                            
-//     <Link to={node.fields.slug}>                               
-//       <h3>                                                    
-//         {node.frontmatter.title}{" "}                        
-//         <span>                                             
-//           — {node.frontmatter.date}                   
-//         </span>                                 
-//       </h3>                                
-//       <p>{node.excerpt}</p>                
-//     </Link>                                
-//   </li>                                   
-// ))}                          
-                        
-export default TeamsListItemPage
-                 
-                        
+   </li>                                 
+)                                     
+                                    
+export default TeamsListItemPage   
+                                  
+                         
