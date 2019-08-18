@@ -14,22 +14,25 @@ const Header = ({ siteTitle }) => (
         </li>                     
         <li>                                  
           <Link to="/services/">Services</Link>
-        </li>                     
-        <li>                   
+        </li>                          
+        <li>                           
           <Link to="/teams/">Teams</Link>
-        </li>                  
+        </li>                         
         <li>                   
           <Link to="/careers">Careers</Link>
         </li>                  
+        <li>                   
+          <Link to="/contacts">Contacts</Link>
+        </li>                  
       </ul>                    
       <button className={ headerStyle.contact }>Get in touch</button>
-    </nav>                  
-  </header>                
-)                          
-                         
-Header.propTypes = {    
+    </nav>                     
+  </header>                    
+)                              
+                               
+Header.propTypes = {           
   siteTitle: PropTypes.string,
-}                   
+}                       
                   
 Header.defaultProps = {
   siteTitle: ``,  

@@ -3,20 +3,35 @@ module.exports = {
     title: `Gatsby Mini Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-  },
-  plugins: [
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    {
+  },  
+  plugins: [            
+    `gatsby-plugin-sass`,               
+    `gatsby-plugin-react-helmet`,      
+    {                                 
+      resolve: `gatsby-source-filesystem`,         
+      options: {                                 
+        name: `images`,                         
+        path: `${__dirname}/src/images`,       
+      },                                       
+    },                            
+    {                           
       resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+      options: {                     
+        name: `markdown-pages`,   
+        path: `${__dirname}/src/pages/markdown-pages`,
+      },                      
+    },                       
+    {                         
+      resolve: `gatsby-source-filesystem`,
+      options: {             
+        name: `pages`,    
+        path: `${__dirname}/src/pages`,
+      },                  
+    },                    
+    `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
+    {                   
       resolve: `gatsby-plugin-manifest`,
       options: {                
         name: `gatsby-starter-default`,
@@ -42,13 +57,6 @@ module.exports = {
           }
         ]  
       }
-    },
-    {                      
-      resolve: `gatsby-source-filesystem`,
-      options: {          
-        name: `markdown-pages`,
-        path: `${__dirname}/src/`,
-      },                
     },                         
     {                                
       resolve: `gatsby-plugin-typography`,
@@ -59,7 +67,7 @@ module.exports = {
     {                               
       resolve: `gatsby-plugin-manifest`,
       options: {                   
-        name: "GatsbyJS Starter", 
+        name: "GatsbyJS Starter",       
         short_name: "GatsbyJS Starter",
         start_url: "/",          
         display: "standalone",  
