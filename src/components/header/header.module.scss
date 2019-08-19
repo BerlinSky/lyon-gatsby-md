@@ -48,16 +48,27 @@
       cursor: pointer;
     }
 
-    .contact {
+    .contact {    
       font-family: inherit;
       font-size: 1.2rem;
       padding: 5px 18px;
       border: 1px solid;
       border-radius: 5px;
-
+                          
       @media screen and (min-width: 550px) {
-        order: 1;
-      }
-    }
-  }
-}
+        order: 1;     
+      }          
+    }                
+  }              
+}                
+                 
+.imageBox {     
+  display: flex;
+  justify-content: center;
+  align-items: center;
+                
+  img {        
+    height: 55px;
+    width: auto;
+  }          
+}            
