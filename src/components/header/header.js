@@ -1,13 +1,19 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"               
-                                        
+                                           
+import logo from '../../images/site-logo.png'
+// import Logo from "../logo/logo"          
+                                     
 import headerStyle from "./header.module.scss"
                                               
 const Header = ({ siteTitle }) => (     
   <header className={ headerStyle.header }>
-    <nav id={siteTitle}>                 
-      <h2 >LOGO</h2>                     
+    <nav id={siteTitle}>                   
+      <h2 >                       
+        {/* <Logo></Logo>               */}
+        <img src={logo} alt="Logo" />
+      </h2>                     
       <ul>                               
         <li>                             
           <Link to="/">Home</Link>      
@@ -26,7 +32,7 @@ const Header = ({ siteTitle }) => (
     </nav>                  
   </header>                
 )                          
-                         
+                           
 Header.propTypes = {    
   siteTitle: PropTypes.string,
 }                   
