@@ -1,18 +1,21 @@
-.landing {
-  background-color: tomato;
-  padding: 0px 90px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1 1 100%;
-  min-height: 350px;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg)
-    no-repeat center / cover;
-  background-blend-mode: luminosity;
-  color: #ffffff;
-
-  h1 {
-    color: inherit;
-  }
-}
+                                                                              
+.landing {                                                                    
+  background-color: tomato;                                                  
+  padding: 0px 90px;                                                        
+                                                                           
+  display: flex;                                                          
+  flex-direction: column;                                              
+  justify-content: center;                                             
+  flex: 1 1 100%;                                                     
+  min-height: 350px;                                                
+  background: url(../../images/stock_06.jpg)   
+    no-repeat center / cover;                                     
+  background-blend-mode: luminosity;                              
+  color: #ffffff;                                               
+                                                               
+  h1 {                                                        
+    color: inherit;                                           
+  }                                                           
+}                                                           
+                                                          
