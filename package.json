@@ -11,8 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests!\""
-  },
-  "dependencies": {
+  },                     
+  "dependencies": {      
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
     "@fortawesome/free-regular-svg-icons": "^5.10.2",
